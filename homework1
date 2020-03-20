@@ -31,8 +31,12 @@ print('Вес заказа: ',order_weight)
 
 '''Упражнение 33'''
 day_old_bread = int(input('Enter the loaves of day old bread: '))
-
 price = 3.49
 discount = 2.09
 
 total_price = discount * day_old_bread
+
+if day_old_bread > 0:
+    print(price, discount, total_price)
+else:
+    print('error')
