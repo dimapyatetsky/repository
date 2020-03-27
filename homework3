@@ -1,0 +1,116 @@
+#Завдання 1
+
+a = int(input('Enter the number: '))
+
+if a > 0:
+    print(a * 2)
+else:
+    print(a)
+
+#Завдання 2
+
+a = int(input('Enter the number: '))
+b = int(input('Enter the number: '))
+
+if a == b:
+    a = 0; b = 0
+    print(a, b)
+else:
+    print(a + b, b + a)
+
+#Завдання 3
+
+a = int(input('Enter the number: '))
+b = int(input('Enter the number: '))
+c = int(input('Enter the number: '))
+
+if a > c and b > c:
+    print(a + b)
+elif a > b and c > b:
+    print(a + c)
+else:
+    print(b + c)
+
+
+
+#Завдання 4
+b= 'asdfasdf'
+
+if b.count('a') > 1:
+    print(b.find('a'), b.rfind('a'))
+elif b.count('a') == 1:
+    print(b.index('a'))
+else:
+    print(False)
+
+
+#Завдання 5
+#цикл FOR
+a = int(input('Ціна за 1 кілограм: '))
+
+for i in range(10):
+    i += 1
+    print(i,'кг коштує', i * a, 'гривень')
+
+#цикл WHILE
+
+a = int(input('Ціна за 1 кілограм: '))
+i = 0
+while i < 10:
+    i+= 1
+    print(i  *a)
+#Завдання 6
+
+a = int(input())
+
+for i in range(a):
+    i += 1
+    print(i, "#" * i)
+
+#Завдання 7
+
+a = 1000
+s = 0
+
+
+for i in range(a):
+    if i % 2 != 0:
+        if i % 5 == 0:
+            s += i
+    else:
+        pass
+
+print('Сума всіх непарних чисел ', s)
+
+
+#Завдання 8
+
+d = 30
+l = 500
+s = 50
+
+for i in range(d):
+    l += s
+
+print('За останній день карантину пробіг', l, 'м')
+
+#Завдання 9
+
+a = 1
+
+for i in range(-24, 12):
+    a *= i
+
+print(a)
+
+
+#Завдання 11
+
+a = int(input())
+
+if a == 2:
+    print('Просте число')
+elif a % 2 == 0:
+    print('Складене число')
+else:
+    print('Просте число')
