@@ -1,0 +1,49 @@
+# Завдання_1
+
+import random
+
+
+program_var = random.randint(1,10)
+
+name = input("Введіть своє ім'я: ")
+
+user_var = int(input("Вгадайте число від 1 до 10. У вас три спроби."
+		"Введіть число: "))
+if user_var != program_var:
+    user_var = int(input('''Помилка. Ваша перша спроба невірна.
+		Підказка: задумане число більше за 1.
+		Спробуйте ще раз!
+		Введіть число:'''))
+    if user_var != program_var:
+        user_var = int(input('''Помилка. Ваша друга спроба невірна.
+		Підказка: задумане число менше 10.
+		Спробуйте ще раз!
+		Введіть число: '''))
+        if user_var != program_var:
+            print(name,",гра закінчена.")
+        else:
+            print(name,",ви виграли")
+    else:
+        print(name,",ви виграли")
+else:
+    print(name,",ви виграли")
+
+
+# Завдання 2
+
+my_list = []
+
+while True:
+    name = input('Хто перетинає кордон: ')
+    if name == "END":
+        break
+    else:
+        my_list.append(name)
+
+dict_with_name = {}
+
+for name in my_list:
+     if name in dict_with_name:
+         dict_with_name[name] += 1
+     else:
+         dict_with_name[name] = 1
