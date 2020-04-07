@@ -1,0 +1,76 @@
+#Завдання 1
+
+try:
+    file = input('Enter your text')
+    f = open('homework_file.txt', 'w')
+    f.close()
+
+except OSError:
+    print('Cannot process file')
+
+# Завдання 2
+
+n = int(input('n:'))
+k = int(input('k:'))
+
+f = open('homework_file.txt', 'w')
+
+for _ in range(n):
+    f.write('*' * k + '\n')
+
+f.close()
+
+# Завдання 3
+
+
+f = open('homework_file.txt', 'r')
+lines = f.readlines()
+
+f = open('homework_file.txt', 'w')
+f.writelines(lines[1:])
+
+f.close()
+
+# Завдання 4
+
+# Завдання 5
+
+#SyntaxError
+
+print(hello word)
+
+#IndentationError
+
+a = 1
+b = 2
+
+if a > b:
+print("false")
+
+#NameError
+
+Print('hello word')
+
+#IndexError
+
+list = [0]
+list[1]
+
+#KeyError
+
+dict = {'a': 1}
+dict['b'
+
+#ImportError
+
+from random import a
+
+#AttirbuteError
+
+str = 'my'
+no_attribute = str.noattribute
+
+#ZeroDivisionError
+
+c = 5 / 0
+print(c)
